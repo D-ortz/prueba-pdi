@@ -10,7 +10,7 @@ if(isset($_FILES["file"])){
             "result" => "Archivo $name subido con éxito"
         );
         // Llamar al script Python para la predicción
-        $output = exec("python/image_processing.py $destination 2>&1", $output_array, $return_code);
+        $output = exec("../python/image_processing.py $destination 2>&1", $output_array, $return_code);
         if ($return_code === 0) {
             // Proceso de Python finalizado correctamente
             $res["prediction"] = $output;
