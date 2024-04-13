@@ -48,18 +48,6 @@ def predict_image(image):
     
     return prediction
 
-def print_image_with_mask(image, mask):
-    # Aplica la máscara a la imagen
-    masked_image = cv2.bitwise_and(image, image, mask=mask)
-    
-    # Concatena la imagen original y la imagen con la máscara
-    printed_image = np.hstack((image, masked_image))
-    
-    # Muestra la imagen resultante
-    cv2.imshow('Imagen con máscara', printed_image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
 
 if __name__ == "__main__":
     
