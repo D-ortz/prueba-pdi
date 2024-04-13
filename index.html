@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Análisis de Imagen</title>
-</head>
-<body>
-    <h1>Subir Imagen</h1>
-    <input type="file" id="inputImage" accept="image/*">
-    <button id="analyzeButton">Analizar</button>
-    <div id="result"></div>
+    <title>Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo morado.jpg" alt="logo">   
+            </div>
+            
+            <h2 class="nombre-empresa">Detector de Tumores Cerebrales</h2>
+            
+        </header>
+            <h1>Subir Imagen</h1>
+            <form action="#">
+                <div class="input-file">
+                    <label for="" class="input-file__field">
+    
+                    </label>
+                    <input type="file"  id="file" class="input-file__input">
+                    <label for="file" class="input-file__btn">Seleccionar archivo</label>
+                </div>
+            </form>
+            
+            <input type="file" class="subir" id="inputImage" accept="image/*">
+            <button id="analyzeButton">Analizar</button>
+            <h1>RESULTADOS</h1>
+            <BR></BR>
+            <div id="result"></div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/script.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
