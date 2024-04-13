@@ -16,7 +16,7 @@ def preprocess_image(image_path):
     # Cargar la imagen utilizando OpenCV
     image = cv2.imread(image_path)
     # Mostrar la imagen utilizando cv2.imshow()
-    cv2.imshow('Imagen', prediction)
+    cv2.imshow('Imagen', image)
     # Esperar a que se presione una tecla
     cv2.waitKey(0)
     
@@ -73,6 +73,3 @@ if __name__ == "__main__":
     
     # Imprimir o devolver el resultado de la predicción
     print(prediction)  # Aquí puedes imprimir el resultado
-
-    # Llama a la función para imprimir la imagen con la máscara
-    print_image_with_mask(image, prediction)
